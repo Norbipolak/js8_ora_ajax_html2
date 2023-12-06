@@ -1,0 +1,39 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0px;
+}
+.container {
+    max-width: 1080px;
+    padding: 15px;
+    margin: auto;
+    text-align: center; /*szöveget alapból középre rakjuk*/
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-box {
+    margin-right: -1px;
+    padding: 5px;
+}
+.product-box {
+    border: 10px solid grey;
+    padding: 15px;
+}
+.product-box h3 {
+    font-size: 17px; /*azért mert nem fértek ki a terméknevek egy sorban és emiatt a kép is lejjebb ment*/
+}
+.product-box-img img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover; /*olyan mint a background-size, a kép amit bele teszünk egy container/holder-be teljsen töltse ki azt*/
+}
